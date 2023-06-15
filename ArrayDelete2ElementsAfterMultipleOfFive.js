@@ -8,11 +8,7 @@
 // console.log('ar', ar);
 
 
-
-
-
-
-let ar = [1, 2, 5, 6, 7, 8, 10, 12];
+let ar = [1, 2, 5, 6, 7, 8, 10, 12, 15, 18, 19];
 let n = ar.length;
 let temp;
 
@@ -20,11 +16,18 @@ for (let i = 0; i < n; i++) {
     if (ar[i] % 5 == 0) {
         for (j = i + 1; j < n; j++) {
             // temp = ar[j];
-            ar[j] = ar[j + 1];
+            ar[j] = ar[j + 2];
             // ar[j + 1] = temp;
         }
-        n--;
+        n = n - 2;
     }
 }
+
 ar.length = n;
 console.log('ar', ar);
+
+// let array = [];
+// for (let i = 0; i < n; i++) {
+//     array.push(ar[i])
+// }
+// console.log(array);

@@ -4,7 +4,7 @@ const users = [
     { firstName: "jay", lastName: "jk", age: 24 },
     { firstName: "Harry", lastName: "hh", age: 23 },
     { firstName: "Vel", lastName: "as", age: 26 },
-    { firstName: "Ram", lastName: "vv", age: 27 },
+    { firstName: "Ram", lastName: "vv", age: 24 },
 ]
 
 // const output = arr.reduce((acc, curr) => acc+curr, 0);
@@ -27,17 +27,17 @@ const users = [
 
 
 // return unique age and count using reduce............
-// const output = users.reduce((acc, curr) => {
-//     if(acc[curr.age]) {
-//         acc[curr.age] = ++acc[curr.age];
-//     }
-//     else {
-//         acc[curr.age] = 1;
-//     };
+const output = users.reduce((acc, curr) => {
+    if(acc[curr.age]) {
+        acc[curr.age] = ++acc[curr.age];
+    }
+    else {
+        acc[curr.age] = 1;
+    };
 
-//     return acc;
-// }, {})
+    return acc;
+}, {})
 
-// console.log('result', output);
+console.log('result', output);
 
 
